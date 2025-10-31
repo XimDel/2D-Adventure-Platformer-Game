@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cq8ied8cmudei"]
+[gd_scene load_steps=13 format=3 uid="uid://cq8ied8cmudei"]
 
 [ext_resource type="Texture2D" uid="uid://b7hb7345vsn5o" path="res://Assets/Terrain/Blue.png" id="1_ysn8j"]
 [ext_resource type="Texture2D" uid="uid://k4wwwlvtbuuf" path="res://Assets/Terrain/Terrain (16x16).png" id="2_6ll4n"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dl2dt5jl1r7b1" path="res://UI.tscn" id="6_kylad"]
 [ext_resource type="Script" uid="uid://d2s544g16vs8c" path="res://Scripts/collectible.gd" id="6_rpty4"]
 [ext_resource type="Script" uid="uid://7d6nv2arg0lg" path="res://Scripts/game_manager.gd" id="7_6jj8j"]
+[ext_resource type="AudioStream" uid="uid://do10vibjmmenr" path="res://Assets/Sounds/background.mp3" id="10_bdlbp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
 texture = ExtResource("2_6ll4n")
@@ -224,8 +225,6 @@ position_smoothing_speed = 7.0
 position = Vector2(-1076, 111)
 target_level = ExtResource("5_6ll4n")
 
-[node name="UI" parent="." instance=ExtResource("6_kylad")]
-
 [node name="Collectibles" type="Node" parent="."]
 
 [node name="Collectible" parent="Collectibles" instance=ExtResource("5_2h8qs")]
@@ -259,6 +258,12 @@ script = ExtResource("6_rpty4")
 [node name="GameManager" type="Node2D" parent="."]
 unique_name_in_owner = true
 script = ExtResource("7_6jj8j")
+
+[node name="UI" parent="." instance=ExtResource("6_kylad")]
+
+[node name="GameAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_bdlbp")
+autoplay = true
 
 [connection signal="body_entered" from="Collectibles/Collectible" to="Collectibles/Collectible" method="_on_body_entered"]
 [connection signal="body_entered" from="Collectibles/Collectible2" to="Collectibles/Collectible2" method="_on_body_entered"]
