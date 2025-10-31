@@ -2,10 +2,14 @@ extends CharacterBody2D
 const SPEED = 300
 const JUMP_VELOCITY = -450.0
 @onready var sprite_2d = $Sprite2D
-@onready var jump_label = $"/root/Node/UI/Sprite2D/JumpLabel"
+#@onready var jump_label = $"/root/Node/UI/Sprite2D/JumpLabel"
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var jump_label
+
+func _ready():
+	jump_label = get_node("/root/Ui/Sprite2D/JumpLabel")
 
 func _physics_process(delta):
 	# Add run animation

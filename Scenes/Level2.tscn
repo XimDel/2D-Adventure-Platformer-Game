@@ -1,18 +1,13 @@
-[gd_scene load_steps=36 format=3 uid="uid://kop7mg3vr1ma"]
+[gd_scene load_steps=11 format=3 uid="uid://kop7mg3vr1ma"]
 
 [ext_resource type="Texture2D" uid="uid://dv2q5crp363hh" path="res://Assets/Terrain/Green.png" id="1_ehjmi"]
 [ext_resource type="Texture2D" uid="uid://k4wwwlvtbuuf" path="res://Assets/Terrain/Terrain (16x16).png" id="2_p4u3k"]
 [ext_resource type="PackedScene" uid="uid://bicdaa6388hir" path="res://Scripts/character_body_2d.tscn" id="3_70df5"]
 [ext_resource type="PackedScene" uid="uid://cum3wafif36sb" path="res://Scripts/Trophy.tscn" id="4_ejprb"]
-[ext_resource type="Texture2D" uid="uid://cbjk6a6sigero" path="res://Assets/Krita/Marco.png" id="5_1je60"]
 [ext_resource type="PackedScene" uid="uid://nw7p6ev7gfwh" path="res://Scripts/collectible.tscn" id="5_au75x"]
-[ext_resource type="Texture2D" uid="uid://bak4owtrvp48w" path="res://Assets/Items/Cherries.png" id="5_ycmr1"]
 [ext_resource type="Script" uid="uid://d2s544g16vs8c" path="res://Scripts/collectible.gd" id="6_62f1r"]
-[ext_resource type="Texture2D" uid="uid://cmwu0ox2ftxjt" path="res://Assets/Krita/Gradient.png" id="6_ycmr1"]
 [ext_resource type="Script" uid="uid://7d6nv2arg0lg" path="res://Scripts/game_manager.gd" id="7_1je60"]
-[ext_resource type="Texture2D" uid="uid://bh17j6gug4mbh" path="res://Assets/Krita/krita.png" id="8_1je60"]
-[ext_resource type="Texture2D" uid="uid://cop7e38o3xoxj" path="res://Assets/Sprite/Jump (32x32).png" id="9_xx40l"]
-[ext_resource type="Texture2D" uid="uid://cxjekll6havab" path="res://Assets/Krita/Jumps.png" id="10_utdxf"]
+[ext_resource type="PackedScene" uid="uid://dl2dt5jl1r7b1" path="res://UI.tscn" id="8_p4u3k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
 texture = ExtResource("2_p4u3k")
@@ -192,140 +187,6 @@ texture = ExtResource("2_p4u3k")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7mycd")
 
-[sub_resource type="LabelSettings" id="LabelSettings_272bh"]
-font_size = 30
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bdlbp"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2h8qs"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rpty4"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6jj8j"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_06um6"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ubfni"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ug0sv"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0wsr5"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(224, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jgorv"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(256, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q1ws5"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(288, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yji5v"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(320, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ulvkb"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(352, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fh0sh"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(384, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_03od6"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(416, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_384de"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(448, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bhaf5"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(480, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o0dvq"]
-atlas = ExtResource("5_ycmr1")
-region = Rect2(512, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_2jwna"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bdlbp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2h8qs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rpty4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6jj8j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_06um6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ubfni")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ug0sv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0wsr5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jgorv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q1ws5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yji5v")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ulvkb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fh0sh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_03od6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_384de")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bhaf5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o0dvq")
-}],
-"loop": true,
-"name": &"default",
-"speed": 18.0
-}]
-
-[sub_resource type="LabelSettings" id="LabelSettings_8wk15"]
-font_size = 20
-font_color = Color(1.44392e-07, 0.701049, 1.54018e-06, 1)
-
 [node name="Node" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -367,101 +228,6 @@ position_smoothing_speed = 7.0
 [node name="Trophy" parent="." instance=ExtResource("4_ejprb")]
 position = Vector2(-1078, 110)
 
-[node name="UI" type="CanvasLayer" parent="."]
-layer = 10
-
-[node name="FlashRect" type="ColorRect" parent="UI" groups=["flash"]]
-modulate = Color(1, 1, 1, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1149.0
-offset_top = -10.0
-offset_right = -3.0
-offset_bottom = -10.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="Panel" type="Panel" parent="UI"]
-offset_right = 187.0
-offset_bottom = 51.0
-
-[node name="PointsLabel" type="Label" parent="UI/Panel"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -129.0
-offset_top = -21.5
-offset_right = -5.0
-offset_bottom = 20.5
-grow_horizontal = 0
-grow_vertical = 2
-text = "Points: 0"
-label_settings = SubResource("LabelSettings_272bh")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="UI"]
-texture_filter = 1
-position = Vector2(30, 26)
-scale = Vector2(2.5, 2.5)
-sprite_frames = SubResource("SpriteFrames_2jwna")
-autoplay = "default"
-frame_progress = 0.140829
-
-[node name="TextureRect" type="TextureRect" parent="UI"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -115.0
-offset_right = 115.0
-grow_vertical = 0
-
-[node name="TextureProgressBar" type="TextureProgressBar" parent="UI/TextureRect"]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 105.0
-offset_top = -19.0
-offset_right = 355.0
-offset_bottom = 106.0
-max_value = 7.0
-texture_over = ExtResource("5_1je60")
-texture_progress = ExtResource("6_ycmr1")
-
-[node name="TextureRect" type="TextureRect" parent="UI/TextureRect"]
-texture_filter = 1
-layout_mode = 0
-offset_right = 115.0
-offset_bottom = 115.0
-texture = ExtResource("8_1je60")
-expand_mode = 1
-
-[node name="Sprite2D" type="Sprite2D" parent="UI/TextureRect"]
-texture_filter = 1
-position = Vector2(57, 54)
-scale = Vector2(3, 3)
-texture = ExtResource("9_xx40l")
-
-[node name="Sprite2D" type="Sprite2D" parent="UI"]
-texture_filter = 1
-position = Vector2(1069, 604)
-scale = Vector2(2, 2)
-texture = ExtResource("10_utdxf")
-
-[node name="JumpLabel" type="Label" parent="UI/Sprite2D"]
-unique_name_in_owner = true
-offset_left = 18.0
-offset_top = -5.0
-offset_right = 48.0
-offset_bottom = 23.0
-text = "0"
-label_settings = SubResource("LabelSettings_8wk15")
-
 [node name="Collectibles" type="Node" parent="."]
 
 [node name="Collectible" parent="Collectibles" instance=ExtResource("5_au75x")]
@@ -495,6 +261,8 @@ script = ExtResource("6_62f1r")
 [node name="GameManager" type="Node2D" parent="."]
 unique_name_in_owner = true
 script = ExtResource("7_1je60")
+
+[node name="UI" parent="." instance=ExtResource("8_p4u3k")]
 
 [connection signal="body_entered" from="Collectibles/Collectible" to="Collectibles/Collectible" method="_on_body_entered"]
 [connection signal="body_entered" from="Collectibles/Collectible2" to="Collectibles/Collectible2" method="_on_body_entered"]
