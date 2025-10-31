@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://cum3wafif36sb"]
 
 [ext_resource type="Texture2D" uid="uid://b3kgibrrn4uoo" path="res://Assets/Trophy/End (Idle).png" id="1_54lsv"]
-[ext_resource type="Script" uid="uid://djld6v1kiisg5" path="res://trophy.gd" id="1_tsk67"]
+[ext_resource type="Script" uid="uid://djld6v1kiisg5" path="res://Scripts/trophy.gd" id="1_tsk67"]
 [ext_resource type="PackedScene" uid="uid://f6ypd73fqbnd" path="res://Scenes/Menu.tscn" id="2_548ir"]
 [ext_resource type="Texture2D" uid="uid://dcvoc13or4njb" path="res://Assets/Trophy/End (Pressed) (64x64).png" id="2_asmgx"]
 [ext_resource type="AudioStream" uid="uid://dv6k5iuph2ep" path="res://Assets/Sounds/Trophy.mp3" id="5_548ir"]

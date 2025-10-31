@@ -1,7 +1,7 @@
 [gd_scene load_steps=52 format=3 uid="uid://bicdaa6388hir"]
 
 [ext_resource type="Texture2D" uid="uid://cop7e38o3xoxj" path="res://Assets/Sprite/Jump (32x32).png" id="1_f50pn"]
-[ext_resource type="Script" uid="uid://d2bci5perx5eu" path="res://character_body_2d.gd" id="1_ij6vw"]
+[ext_resource type="Script" uid="uid://d2bci5perx5eu" path="res://Scripts/character_body_2d.gd" id="1_ij6vw"]
 [ext_resource type="Texture2D" uid="uid://c4atf1v2bjptj" path="res://Assets/Sprite/Double Jump (32x32).png" id="2_4sjlk"]
 [ext_resource type="Texture2D" uid="uid://b4k0v8vyd3nl3" path="res://Assets/Sprite/Hit (32x32).png" id="3_qp52p"]
 [ext_resource type="Texture2D" uid="uid://bfelpmc32tn08" path="res://Assets/Sprite/Idle (32x32).png" id="4_6ct3r"]
