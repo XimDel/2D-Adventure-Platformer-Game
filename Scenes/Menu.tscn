@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://f6ypd73fqbnd"]
+
+[ext_resource type="Script" uid="uid://b41rt7shbutyy" path="res://Scenes/menu.gd" id="1_syfuq"]
+[ext_resource type="Texture2D" uid="uid://l23urpoyi7d1" path="res://Assets/Terrain/Purple.png" id="2_s2c3o"]
+[ext_resource type="Texture2D" uid="uid://bl80yqvd5v78h" path="res://Assets/Logo/Logo.png" id="3_ma218"]
+[ext_resource type="Texture2D" uid="uid://cop7e38o3xoxj" path="res://Assets/Sprite/Jump (32x32).png" id="4_s2c3o"]
+
+[node name="Menu" type="Node"]
+script = ExtResource("1_syfuq")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 1149.0
+offset_bottom = 643.0
+texture = ExtResource("2_s2c3o")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -245.0
+offset_top = -49.0
+offset_right = 246.0
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ma218")
+stretch_mode = 1
+
+[node name="Nivel1" type="Button" parent="."]
+offset_left = 416.0
+offset_top = 416.0
+offset_right = 523.0
+offset_bottom = 466.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 30
+text = "Nivel 1"
+
+[node name="Nivel2" type="Button" parent="."]
+offset_left = 640.0
+offset_top = 414.0
+offset_right = 747.0
+offset_bottom = 464.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 30
+text = "Nivel 2"
+
+[node name="Character" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(571, 209)
+scale = Vector2(4, 4)
+texture = ExtResource("4_s2c3o")
+
+[connection signal="pressed" from="Nivel1" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="Nivel2" to="." method="_on_nivel_2_pressed"]
