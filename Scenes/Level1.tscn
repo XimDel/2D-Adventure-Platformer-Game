@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cq8ied8cmudei"]
+[gd_scene load_steps=14 format=3 uid="uid://cq8ied8cmudei"]
 
 [ext_resource type="Texture2D" uid="uid://b7hb7345vsn5o" path="res://Assets/Terrain/Blue.png" id="1_ysn8j"]
 [ext_resource type="Texture2D" uid="uid://k4wwwlvtbuuf" path="res://Assets/Terrain/Terrain (16x16).png" id="2_6ll4n"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://d2s544g16vs8c" path="res://Scripts/collectible.gd" id="6_rpty4"]
 [ext_resource type="Script" uid="uid://7d6nv2arg0lg" path="res://Scripts/game_manager.gd" id="7_6jj8j"]
 [ext_resource type="AudioStream" uid="uid://do10vibjmmenr" path="res://Assets/Sounds/background.mp3" id="10_bdlbp"]
+[ext_resource type="Script" uid="uid://biclhwjueyl6u" path="res://Scenes/spawner.gd" id="11_2h8qs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
 texture = ExtResource("2_6ll4n")
@@ -265,6 +266,14 @@ script = ExtResource("7_6jj8j")
 stream = ExtResource("10_bdlbp")
 autoplay = true
 
+[node name="Spawner" type="Node2D" parent="."]
+position = Vector2(357, 411)
+script = ExtResource("11_2h8qs")
+
+[node name="Timer" type="Timer" parent="Spawner"]
+wait_time = 3.0
+autostart = true
+
 [connection signal="body_entered" from="Collectibles/Collectible" to="Collectibles/Collectible" method="_on_body_entered"]
 [connection signal="body_entered" from="Collectibles/Collectible2" to="Collectibles/Collectible2" method="_on_body_entered"]
 [connection signal="body_entered" from="Collectibles/Collectible3" to="Collectibles/Collectible3" method="_on_body_entered"]
@@ -272,3 +281,4 @@ autoplay = true
 [connection signal="body_entered" from="Collectibles/Collectible5" to="Collectibles/Collectible5" method="_on_body_entered"]
 [connection signal="body_entered" from="Collectibles/Collectible6" to="Collectibles/Collectible6" method="_on_body_entered"]
 [connection signal="body_entered" from="Collectibles/Collectible7" to="Collectibles/Collectible7" method="_on_body_entered"]
+[connection signal="timeout" from="Spawner/Timer" to="Spawner" method="_on_timer_timeout"]

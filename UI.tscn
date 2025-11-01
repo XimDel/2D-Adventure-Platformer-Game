@@ -184,7 +184,6 @@ position = Vector2(30, 26)
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_1nrjw")
 autoplay = "default"
-frame_progress = 0.486758
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 2
