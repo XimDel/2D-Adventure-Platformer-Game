@@ -343,9 +343,8 @@ z_index = 1
 texture_filter = 1
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_1hg8c")
-animation = &"Idle"
+animation = &"Jump"
 autoplay = "Idle"
-frame_progress = 0.870633
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
