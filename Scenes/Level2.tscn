@@ -2,12 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://dv2q5crp363hh" path="res://Assets/Terrain/Green.png" id="1_ehjmi"]
 [ext_resource type="Texture2D" uid="uid://k4wwwlvtbuuf" path="res://Assets/Terrain/Terrain (16x16).png" id="2_p4u3k"]
-[ext_resource type="PackedScene" uid="uid://bicdaa6388hir" path="res://Scripts/character_body_2d.tscn" id="3_70df5"]
-[ext_resource type="PackedScene" uid="uid://cum3wafif36sb" path="res://Scripts/Trophy.tscn" id="4_ejprb"]
-[ext_resource type="PackedScene" uid="uid://nw7p6ev7gfwh" path="res://Scripts/collectible.tscn" id="5_au75x"]
+[ext_resource type="PackedScene" uid="uid://bicdaa6388hir" path="res://Scenes/character_body_2d.tscn" id="3_70df5"]
+[ext_resource type="PackedScene" uid="uid://cum3wafif36sb" path="res://Scenes/Trophy.tscn" id="4_ejprb"]
+[ext_resource type="PackedScene" uid="uid://nw7p6ev7gfwh" path="res://Scenes/collectible.tscn" id="5_au75x"]
 [ext_resource type="Script" uid="uid://d2s544g16vs8c" path="res://Scripts/collectible.gd" id="6_62f1r"]
 [ext_resource type="Script" uid="uid://7d6nv2arg0lg" path="res://Scripts/game_manager.gd" id="7_1je60"]
-[ext_resource type="PackedScene" uid="uid://dl2dt5jl1r7b1" path="res://UI.tscn" id="8_p4u3k"]
+[ext_resource type="PackedScene" uid="uid://dl2dt5jl1r7b1" path="res://Scenes/UI.tscn" id="8_p4u3k"]
 [ext_resource type="AudioStream" uid="uid://do10vibjmmenr" path="res://Assets/Sounds/background.mp3" id="9_70df5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]

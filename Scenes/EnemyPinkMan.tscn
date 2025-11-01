@@ -3,53 +3,53 @@
 [ext_resource type="Texture2D" uid="uid://dlgmx1fja8bp7" path="res://Assets/Pink Man/Run (32x32).png" id="1_ke6ue"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xvj5q"]
-size = Vector2(20.6667, 25)
+size = Vector2(21.6667, 26.3333)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_c5awx"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_b43so"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_syjak"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0agui"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(32, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_crwy6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xb7fg"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(64, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1j3m1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_tg3bn"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(96, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_34e1g"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mevex"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(128, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xl4f3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpu5k"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(160, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_g2oyg"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_o5u7g"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(192, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jysd8"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxds2"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(224, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_flfu5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1yhy5"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(256, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_u8535"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xv1xu"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(288, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5hp4b"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_qls8w"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(320, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vpj3y"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3bt7"]
 atlas = ExtResource("1_ke6ue")
 region = Rect2(352, 0, 32, 32)
 
@@ -57,52 +57,51 @@ region = Rect2(352, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_c5awx")
+"texture": SubResource("AtlasTexture_b43so")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_syjak")
+"texture": SubResource("AtlasTexture_0agui")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_crwy6")
+"texture": SubResource("AtlasTexture_xb7fg")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_1j3m1")
+"texture": SubResource("AtlasTexture_tg3bn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_34e1g")
+"texture": SubResource("AtlasTexture_mevex")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xl4f3")
+"texture": SubResource("AtlasTexture_hpu5k")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_g2oyg")
+"texture": SubResource("AtlasTexture_o5u7g")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jysd8")
+"texture": SubResource("AtlasTexture_wxds2")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_flfu5")
+"texture": SubResource("AtlasTexture_1yhy5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_u8535")
+"texture": SubResource("AtlasTexture_xv1xu")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5hp4b")
+"texture": SubResource("AtlasTexture_qls8w")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vpj3y")
+"texture": SubResource("AtlasTexture_d3bt7")
 }],
 "loop": true,
 "name": &"Run",
-"speed": 20.0
+"speed": 15.0
 }]
 
 [node name="Enemy" type="CharacterBody2D"]
 scale = Vector2(3, 3)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0.333333, 0.5)
+position = Vector2(0.833333, 1.16667)
 shape = SubResource("RectangleShape2D_xvj5q")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -111,11 +110,9 @@ sprite_frames = SubResource("SpriteFrames_58b86")
 animation = &"Run"
 
 [node name="Left" type="RayCast2D" parent="."]
-visible = false
 target_position = Vector2(-20, 0)
 collision_mask = 4
 
 [node name="Right" type="RayCast2D" parent="."]
-visible = false
 target_position = Vector2(20, 0)
 collision_mask = 4

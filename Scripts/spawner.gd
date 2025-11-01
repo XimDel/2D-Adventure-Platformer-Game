@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var cherry = load("res://Scripts/collectible.tscn")
+@onready var cherry = load("res://Scenes/collectible.tscn")
 @onready var timer = get_node("Timer")
 
 func _ready():
